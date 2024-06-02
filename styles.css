@@ -1,4 +1,4 @@
-/* Yleiset asetukset kehossa */
+/* Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     background: linear-gradient(135deg, #333333, #1e1e1e);
     color: #fff;
     overflow-x: hidden;
-    position: relative; /* Lisää tämä */
+    position: relative;
 }
 
 .magic-curve {
@@ -15,7 +15,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Taustalle */
+    z-index: -1;
 }
 
 #star {
@@ -232,5 +232,66 @@ ul li a:hover {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        position: static;
+        transform: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul li a {
+        border-radius: 30px;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skill-item {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        padding: 5px 10px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px 5px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    .profile-picture {
+        width: 80px;
+        height: 80px;
     }
 }
