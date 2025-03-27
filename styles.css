@@ -103,7 +103,7 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-h4 {
+.project h4 {
     letter-spacing: 2px;
     text-align: center;
 }
