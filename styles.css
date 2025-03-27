@@ -103,6 +103,11 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
+h4 {
+    letter-spacing: 2px;
+    text-align: center;
+}
+
 p, ul {
     text-align: center;
     line-height: 1.6;
